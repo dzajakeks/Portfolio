@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .blackedOutContent {
+    @apply bg-gradient-to-b from-[#120B1C] from-[2%] via-black via-5%  to-black to-10%;
+  }
+  .hidePageContent {
+    @apply opacity-0 invisible duration-200;
+  }
+  .showPageContent {
+    @apply opacity-100 visible duration-200;
+  }
+  .overFlowAuto {
+    @apply overflow-visible !important;
+  }
+  .linksBtns {
+    @apply bg-[#372549] rounded-sm m-2 text-center mx-auto px-8 py-1 hover:bg-[#9A688F] duration-200;
+  }
+  .sections {
+    @apply my-20 max-w-6xl mx-auto;
+  }
+  .navLink {
+    @apply mx-4 hover:text-[#774C60];
+  }
+  .slide {
+    @apply absolute bottom-0 left-0;
+  }
+  .closeSidebarLink {
+    @apply hover:text-[#774C60];
+  }
+}
